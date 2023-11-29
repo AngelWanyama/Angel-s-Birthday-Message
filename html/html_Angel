@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Angel </title>
+    <script>
+        function wishHappyBirthday(name, birthdate) {
+            var currentDate = new Date();
+            var currentMonth = currentDate.getMonth(); // Note: Months are zero-based
+            var currentDay = currentDate.getDate();
+
+            if (currentMonth === 10 && currentDay === 23) {
+                alert("Happy Birthday, " + name + "!");
+            } else {
+                alert("Have a great day, " + name + "!");
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <h1>Birthday Wishes</h1>
+
+    <script>
+        // Usage
+        wishHappyBirthday("Angel Wanyama", "November 23");
+    </script>
+
+</body>
+</html>
